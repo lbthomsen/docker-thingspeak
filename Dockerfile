@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update 
 RUN apt-get upgrade -y
-RUN apt-get install -y build-essential libpq-dev ruby git bundler libmysqlclient15-dev mysql-client
+RUN apt-get install -y build-essential libpq-dev ruby git bundler libmysqlclient15-dev mysql-client libsqlite3-dev
 
 WORKDIR /opt/
 
